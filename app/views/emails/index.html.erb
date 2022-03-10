@@ -1,0 +1,19 @@
+<div class='container'>
+    <div class='actions text-center'>
+      <%= form_with(url: emails_path,method: :post) do |form| %>
+        <%= form.submit 'Recevoir un email' %>
+      <% end %>
+    </div>
+    </br></br>
+    <div class="row">
+      <div class='email-list col-lg-6'>
+        <div class="bs-compoment">
+        <% @emails.sort.reverse_each do |email| %>
+          <%= render 'email', email: email, remote: true %>
+        <% end %>
+        </div>
+      </div>
+
+      <div class='show-email col-lg-6'></div>
+    </div>
+</div>

@@ -1,0 +1,2 @@
+document.getElementById("<%=@email.id%>").setAttribute("class","card mb-3 border-success")
+document.querySelector('.show-email').innerHTML = "<%= j render partial: 'show', locals: { email: @email } %>";

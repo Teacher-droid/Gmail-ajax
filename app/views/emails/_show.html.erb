@@ -1,0 +1,8 @@
+<div id="destroy" class="card text-white mb-3">
+  <div class="card-header"><h3 ><%= email.object %></h3></div>
+  <div class="card-body"><p ><%= email.body %></p></div>
+  <div class="btn-group mb-7">
+    <a href="<%= email_path(email.id) %>" class="btn btn-primary rounded-pill" data-confirm='Are you sure ?' data-method='delete' data-remote="true">Supprimer</a>
+    <a href="<%= email_path(email.id) %>" class="btn btn-secondary rounded-pill" id="read" data-method='put' data-remote="true"> <%= email.read == true ? "Marquer comme non-lu" : "Marquer comme lu" %></a>
+  </div>
+</div>

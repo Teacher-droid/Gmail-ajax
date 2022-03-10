@@ -1,0 +1,3 @@
+<div id="<%= email.id %>" class="card text-white mb-3 <%= email.read == true ? "read border-success" : "border-warning" %>" >
+  <%= link_to(raw("<p>Objet : #{email.object} </br></br> #{email.body} </p>"),email_path(email), remote: true)%>
+</div>
