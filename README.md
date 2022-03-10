@@ -74,6 +74,7 @@ Things you may want to cover 📝
 
 
 <hr>
+<hr>
 
 
 ## Tech ⚙️
