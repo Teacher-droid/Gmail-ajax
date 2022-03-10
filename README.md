@@ -28,6 +28,8 @@ This README would normally document whatever steps are necessary to get the appl
 * Check uncheck e-mail on click
 * Smart select on click via CSS
 
+<hr>
+
 Things you may want to cover 📝
 
 * Ruby version
